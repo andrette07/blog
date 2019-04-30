@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'pagesController@index');
 
-Route::view('gallery','photos');
+Route::get('photos', 'pagesController@photos')->name('Photos');
 
-Route::view('blog','blog');
+Route::get('blog', 'pagesController@blog')->name('Blog');
+
+Route::get('nosotros/{name?}', 'pagesController@nosotros')->name('Nosotros');
