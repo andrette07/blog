@@ -15,6 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('gallery','photos');
+Route::view('gallery','photos1');
 
 Route::view('blog','blog');
